@@ -31,8 +31,8 @@ class BandStructureArtist:
         self._ax.set_xlim(np.min(band_structure.bands[0].k_points_x), np.max(band_structure.bands[0].k_points_x))
         #self._ax.vlines(, e_range[0], e_range[1], linestyles='-', color='red', lw = 0.7)
         if k_points_labels is not None:
-            self._ax.sets_xticks(band_structure.bands[0].k_points_x, k_points_labels)
+            self._ax.set_xticks(band_structure.bands[0].k_points_x, k_points_labels)
         self._ax.plot(band_structure.valence_band.max_k_points_x[0], np.mean(band_structure.valence_band.max_eigv) - e_ref, 'o', color='purple')
         self._ax.plot(band_structure.conduction_band.min_k_points_x[0], np.mean(band_structure.conduction_band.min_eigv) - e_ref, 'o', color='green')
-        self._ax.legend(loc="upper right")
+        #self._ax.legend(loc="upper right")
 
