@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "QE_bands_processor"
+authors = [
+  { name="Henry Ding", email="ding.henry.23@gmail.com" },
+]
+description = "Processes the output of Quantum Espresso band structure calculations."
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "perovskite_utils@git+https://github.com/Henry-P-Ding/perovskite_utils.git",
+]
+dynamic = ["version"]
+
+[tool.setuptools_scm]

@@ -1,5 +1,5 @@
 import numpy as np
-from perovskite_utils.perovskite_utils.file_read_write import FileReader, FileReaderState
+from perovskite_utils.file_read_write import FileReader, FileReaderState
 
 
 class PWscfBandsOutputState(FileReaderState):
